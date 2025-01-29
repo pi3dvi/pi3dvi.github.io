@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Physics">
+  <meta name="keywords" content="Physics, vision, workshop, 3D vision, nerf">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="./static/img/logo.webp" />
+  <title>Physics-inspired 3D Vision and Imaging</title>
+  
+  <meta property="og:description" content="Physics-inspired 3D Vision and Imaging"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <script defer src="assets/fontawesome.all.min.js"></script>
+
+
+  <link rel="icon" href="./static/img/logo.webp">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+
+  <style>
+    .rcorners1 {
+      border-radius: 10px;
+      background: #ffffffd0;
+      padding: 5px;
+      font-size: 120%;
+      color: #5c5c5c;
+    }
+
+    .button {
+      border-radius: 10px;
+      background: #ffffffd0;
+      padding: 5px 15px 5px 15px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      /* background-color: #f9f9f9; */
+      min-width: 140px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 5px 15px 5px 15px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+              <p class="title is-1 publication-title">Physics-inspired 3D Vision and Imaging
+              </p>
+            </h1>
+            <h1 class="is-is-5" style="color: #5c5c5c;">CVPR 2025, Nashville, Tennessee.</h1>
+            <!-- <b>Date: TBD</b><br>
+            <b>Location: TBD, Nashville, Tennessee</b><br> -->
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="subtitle has-text-centered">
+          <a href="#schedule" class="button">Schedule</a>
+          <a href="#speakers" class="button">Speakers</a>
+          <!-- <a href="#call4paper" class="button">Call for Papers</a> -->
+          <!-- <a href="#relatedwork" class="button">Related Work</a> -->
+          <!-- <a href="#challenge" class="button">Challenge</a> -->
+          <a href="#organizers" class="button">Organizers</a>
+        </h2>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- ############################## -->
+  <!-- motivation -->
+  <section class="section" style="margin-top: -50px">
+    <div class="container is-max-desktop">
+
+      <!-- <section class="section" id="Motivation">
+        <div class="container is-max-desktop content">
+          <h2 class="title">Motivation 💡</h2>
+          <div class="content has-text-justified">
+            Neural fields have been widely adopted for learning novel view synthesis and 3D reconstruction from RGB images by modelling transport of light in the visible spectrum. This workshop focuses on <em>Physics-inspired 3D Vision and Imaging</em>, including (1) learning neural fields from data from different sensors across the electromagnetic spectrum and beyond, such as lidar, cryo-electron microscopy (cryoEM), thermal, event cameras, acoustic, and more, and (2) modelling associated physics-based differentiable forward models and/or the physics of more complex light transport (reflections, shadows, polarization, diffraction limits, optics, scattering in fog or water, etc.). Our goal is to bring together a diverse group of researchers using neural fields across sensor domains to foster learning and discussion in this growing area. 
+          </div>
+        </div>
+      </section> -->
+
+    <section class="section" style="margin-top: -50px">
+      <div class="container is-max-desktop">
+        <!-- ############################## -->
+        <!-- scheduler -->
+        <section class="section" id="schedule">
+          <div class="container is-max-desktop content">
+            <h2 class="title">Schedule ⏰ (Tentative)</h2>
+            <div class="content has-text-justified">
+              <table class="table table-striped">
+                <tr>
+                  <td width="130">9:00 - 9:10</td>
+                  <td width="500" style="background-color:#e4ffc2">Openeing remarks</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9:10 - 9:40</td>
+                  <td style="background-color:#cae1ff">Keynote: Ioannis Gkioulekas  <b></b></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9:40 - 10:10</td>
+                  <td style="background-color:#cae1ff">Keynote: Seung-Hwan Baek <b></b></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10:10 - 11:00</td>
+                  <td style="background-color:#ffe0c6">Poster Session<b></b></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11:00 - 11:30</td>
+                  <td style="background-color:#cae1ff">Keynote: Laura Waller <b></b></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>11:30 - 12:00</td>
+                  <td style="background-color:#cae1ff">Keynote: Berthy Fang<b></b></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12:00 - 12:30</td>
+                  <td style="background-color:#e4ffc2">Break</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>12:30 - 13:00</td>
+                  <td style="background-color:#cafffc">Keynote: TBD</td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ############################## -->
+        <!-- speakers -->
+        <section class="section" id="Speakers">
+          <div class="container is-max-desktop content">
+            <h2 class="title" id="speakers">Speakers</h2>
+            
+            <div class="columns is-centered is-variable is-0">
+
+              <div class="column is-one-quarter">
+                <a href="https://www.cs.cmu.edu/~igkioule/">
+                  <div class="card">
+                    <div class="card-image">
+                      <!-- <figure class="image">
+                        <img class="is-rounded" src="static/speaker_img/ioannis.jpg" alt="Image of Ioannis">
+                      </figure> -->
+                      <figure class="image is-128x128">
+                        <img class="is-rounded" src="static/speaker_img/ioannis.jpg">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Ioannis Gkioulekas</p>
+                          <p class="subtitle is-7">CMU </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-one-quarter">
+                <a href="https://sites.google.com/view/shbaek//">
+                  <div class="card">
+                    <div class="card-image">
+                      <!-- <figure class="image">
+                        <img class="is-rounded" src="static/speaker_img/ioannis.jpg" alt="Image of Ioannis">
+                      </figure> -->
+                      <figure class="image is-128x128">
+                        <img class="is-rounded" src="static/speaker_img/seung-hwan.jpeg">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Seung-Hwan Baek</p>
+                          <p class="subtitle is-7">POSTECH </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+
+              <div class="column is-one-quarter">
+                <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/waller.html">
+                  <div class="card">
+                    <div class="card-image">
+                      <!-- <figure class="image">
+                        <img class="is-rounded" src="static/speaker_img/laura.jpeg" alt="Image of Laura">
+                      </figure> -->
+                      <figure class="image is-128x128">
+                        <img class="is-rounded" src="static/speaker_img/laura.jpg">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Laura Waller</p>
+                          <p class="subtitle is-7">UC Berkeley</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-one-quarter">
+                <a href="https://www.berthyfeng.com//">
+                  <div class="card">
+                    <div class="card-image">
+                      <!-- <figure class="image">
+                        <img class="is-rounded" src="static/speaker_img/berthy.png" alt="Image of Berthy">
+                      </figure> -->
+                      <figure class="image is-128x128">
+                        <img class="is-rounded" src="static/speaker_img/berthy.png">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Berthy Fang</p>
+                          <p class="subtitle is-7">Caltech</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+          
+          
+
+        <!-- ############################## -->
+        <!-- organizers -->
+        <section class="section" id="Organizers">
+          <div class="container is-max-desktop content">
+            <h2 class="title" id="organizers">Organizers</h2>
+            
+            <div class="columns is-centered is-variable is-0">
+
+              <div class="column is-one-fifth">
+                <a href="https://anaghmalik.com">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img class="is-rounded" src="./static/img/anagh.png" alt="Image of Anagh">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Anagh Malik</p>
+                          <p class="subtitle is-7">University of Toronto </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="column is-one-fifth">
+                <a href="https://benattal.github.io/">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img class="is-rounded" src="./static/img/ben.jpeg" alt="Image of Ben">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Ben Attal</p>
+                          <p class="subtitle is-7">CMU</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="column is-one-fifth">
+                <a href="https://dorverbin.github.io/">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img class="is-rounded" src="./static/img/dor.jpg" alt="Image of Dor">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Dor Verbin</p>
+                          <p class="subtitle is-7">Google</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="column is-one-fifth">
+                <a href="https://ceciliavision.github.io/">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img class="is-rounded" src="static/img/cecilia.jpg" alt="Image of Cecilia">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">Cecilia Zhang</p>
+                          <p class="subtitle is-7">Adobe</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="column is-one-fifth">
+                <a href="https://jamestompkin.com/">
+                  <div class="card">
+                    <div class="card-image">
+                      <figure class="image">
+                        <img class="is-rounded" src="./static/img/James.jpg" alt="Image of James">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content" style="overflow-x: unset;">
+                          <p class="title is-7 is-spaced">James Tompkin</p>
+                          <p class="subtitle is-7">Brown</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+
+
+          <footer class="footer">
+            <div class="container">
+              <div class="content">
+                <p>
+                  This website is licensed under a <a rel="license"
+                    href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                  <br />
+                  It borrows the source code of <a href="https://github.com/nerfies/nerfies.github.io">this website</a>.
+                  We would like to thank Utkarsh Sinha and Keunhong Park.
+                  <br>
+                </p>
+              </div>
+            </div>
+          </footer>
+</body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+
+</html>
